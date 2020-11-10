@@ -1,2 +1,2 @@
-# leetcode
-LeetCode刷题日记
+# LeetCode刷题日记
+
