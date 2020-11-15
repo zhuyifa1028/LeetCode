@@ -1,4 +1,3 @@
-//
 // 给出两个 非空 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序 的方式存储的，并且它们的每个节点只能存储 一位 数字。
 //
 // 如果，我们将这两个数相加起来，则会返回一个新的链表来表示它们的和。
@@ -15,14 +14,27 @@
 // 链接：https://leetcode-cn.com/problems/add-two-numbers
 // 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 
-//leetcode submit region begin(Prohibit modification and deletion)
-public class Solution_2 {
+/**
+ * 两数之和
+ *
+ * @author zhuyifa
+ * @version 2020-11-13
+ */
+public class Solution2 {
 
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        ListNode head = null; // 头部节点
-        ListNode tail = null; // 尾部节点
+    public static void main(String[] args) {
+        ListNode res = addTwoNumbers(new ListNode(), new ListNode());
+        System.out.println(res);
+    }
 
-        int v3 = 0; // 尾部节点值
+    public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        // 头部节点
+        ListNode head = null;
+        // 尾部节点
+        ListNode tail = null;
+
+        // 尾部节点值
+        int v3 = 0;
         while (l1 != null || l2 != null) {
 
             int v1 = 0;
@@ -53,4 +65,3 @@ public class Solution_2 {
     }
 
 }
-//leetcode submit region end(Prohibit modification and deletion)
