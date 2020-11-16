@@ -23,8 +23,10 @@
 public class Solution2 {
 
     public static void main(String[] args) {
-        ListNode res = addTwoNumbers(new ListNode(), new ListNode());
-        System.out.println(res);
+        ListNode l1 = ListNode.random(10, 3);
+        ListNode l2 = ListNode.random(10, 3);
+        System.out.println("输入：" + l1 + " + " + l2 + "");
+        System.out.println("输出：" + addTwoNumbers(l1, l2));
     }
 
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
