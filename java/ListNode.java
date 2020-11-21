@@ -56,6 +56,23 @@ public class ListNode {
         return head;
     }
 
+    public static ListNode valueOf(int... values) {
+        // 头部节点
+        ListNode head = null;
+        // 尾部节点
+        ListNode tail = null;
+
+        for (int value : values) {
+            if (head == null) {
+                head = tail = new ListNode(value);
+            } else {
+                tail.next = new ListNode(value);
+                tail = tail.next;
+            }
+        }
+        return head;
+    }
+
     public static void main(String[] args) {
         ListNode l1 = random(10, 3);
         ListNode l2 = random(10, 3);
