@@ -1,12 +1,14 @@
+package common;
+
 import java.util.Random;
 
 /**
- * 数组工具类
+ * 数组类
  *
  * @author zhuyifa
  * @version 2020-11-16
  */
-public class ArrayUtils {
+public class Array {
 
     public static int[] randomInt(int bound, int length) {
         int[] array = new int[length];
