@@ -1,3 +1,5 @@
+package common;
+
 import java.util.Random;
 
 /**
@@ -8,10 +10,10 @@ import java.util.Random;
  */
 public class ListNode {
 
-    int val;
-    ListNode next;
+    public int val;
+    public ListNode next;
 
-    ListNode(int val) {
+    public ListNode(int val) {
         this.val = val;
     }
 
@@ -77,7 +79,6 @@ public class ListNode {
         ListNode l1 = random(10, 3);
         ListNode l2 = random(10, 3);
         System.out.println("输入：" + l1 + " + " + l2 + "");
-        System.out.println("输出：" + Solution2.addTwoNumbers(l1, l2));
     }
 
 }
