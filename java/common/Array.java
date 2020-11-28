@@ -1,5 +1,6 @@
 package common;
 
+import java.util.Arrays;
 import java.util.Random;
 
 /**
@@ -18,6 +19,11 @@ public class Array {
             array[i] = random.nextInt(bound);
         }
         return array;
+    }
+
+    public static void main(String[] args) {
+        int[] ints = randomInt(3, 3);
+        System.out.println("输出: " + Arrays.toString(ints));
     }
 
 }
