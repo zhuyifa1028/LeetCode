@@ -34,4 +34,23 @@ public class TreeNode {
         this.right = right;
     }
 
+    /**
+     * 获取树的深度
+     *
+     * @return 树的深度
+     */
+    public int getDepth() {
+        return getDepth(this);
+    }
+
+    /**
+     * 获取树的深度
+     *
+     * @param root 根节点
+     * @return 树的深度
+     */
+    private int getDepth(TreeNode root) {
+        return root == null ? 0 : Math.max(getDepth(root.left), getDepth(root.right)) + 1;
+    }
+
 }
