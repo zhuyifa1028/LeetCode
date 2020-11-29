@@ -120,4 +120,12 @@ public class TreeNode {
         }
     }
 
+    public static void main(String[] args) {
+        TreeNode left = new TreeNode(2);
+        TreeNode right = new TreeNode(3);
+        TreeNode treeNode = new TreeNode(1, left, right);
+
+        System.out.println("输出：\n" + treeNode);
+    }
+
 }
