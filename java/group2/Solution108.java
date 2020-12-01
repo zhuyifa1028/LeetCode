@@ -23,9 +23,6 @@ package group2;
 import common.TreeNode;
 
 import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
 
 /**
  * 108. 将有序数组转换为二叉搜索树
@@ -39,10 +36,10 @@ public class Solution108 {
         int[] nums = new int[]{-10, -3, 0, 5, 9};
 
         System.out.println("输入：" + Arrays.toString(nums));
-        System.out.println("输出：\n" + sortedArrayToBST(nums));
+        System.out.println("输出：\n" + sortedArrayToBst(nums));
     }
 
-    public static TreeNode sortedArrayToBST(int[] nums) {
+    public static TreeNode sortedArrayToBst(int[] nums) {
         return helper(nums, 0, nums.length - 1);
     }
 
