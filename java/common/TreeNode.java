@@ -87,7 +87,7 @@ public class TreeNode {
             }
             sb.append("\n");
         }
-        return sb.toString();
+        return "\n" + sb.toString();
     }
 
     private static void writeArray(TreeNode currNode, int rowIndex, int columnIndex, String[][] res, int treeDepth) {
