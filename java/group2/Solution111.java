@@ -1,33 +1,29 @@
 package group2;
 
-// 给定一个二叉树，判断它是否是高度平衡的二叉树。
+// 给定一个二叉树，找出其最小深度。
 //
-// 本题中，一棵高度平衡二叉树定义为：
+// 最小深度是从根节点到最近叶子节点的最短路径上的节点数量。
 //
-//   一个二叉树每个节点 的左右两个子树的高度差的绝对值不超过 1 。
+// 说明：叶子节点是指没有子节点的节点。
 //
 // 示例 1：
 //
+//
 //   输入：root = [3,9,20,null,null,15,7]
-//   输出：true
+//   输出：2
 //
 // 示例 2：
 //
-//   输入：root = [1,2,2,3,3,null,null,4,4]
-//   输出：false
-//
-// 示例 3：
-//
-//   输入：root = []
-//   输出：true
+//   输入：root = [2,null,3,null,4,null,5,null,6]
+//   输出：5
 //
 // 提示：
 //
-//   树中的节点数在范围 [0, 5000] 内
-//   -10^4 <= Node.val <= 10^4
+//   树中节点数的范围在 [0, 10^5] 内
+//   -1000 <= Node.val <= 1000
 //
 // 来源：力扣（LeetCode）
-// 链接：https://leetcode-cn.com/problems/balanced-binary-tree
+// 链接：https://leetcode-cn.com/problems/minimum-depth-of-binary-tree
 // 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 
 import common.TreeNode;
