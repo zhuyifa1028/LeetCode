@@ -2,7 +2,9 @@ package common;
 
 import group1.Solution2;
 
+import java.util.HashSet;
 import java.util.Random;
+import java.util.Set;
 
 /**
  * 链表节点
@@ -15,27 +17,33 @@ public class ListNode {
     public int val;
     public ListNode next;
 
-    public ListNode() {
-    }
-
     public ListNode(int val) {
         this.val = val;
     }
 
     @Override
     public String toString() {
+        //noinspection MapOrSetKeyShouldOverrideHashCodeEquals
+        Set<ListNode> seen = new HashSet<>();
         StringBuilder builder = new StringBuilder();
         builder.append("(");
 
-        ListNode l = this;
-        do {
-            builder.append(l.val);
-            l = l.next;
+        ListNode head = this;
+        while (head != null) {
 
-            if (l != null) {
+            builder.append(head.val);
+
+            ListNode next = head.next;
+            //noinspection MapOrSetKeyShouldOverrideHashCodeEquals
+            if (!seen.add(next)) {
+                break;
+            }
+            if (next != null) {
                 builder.append(" -> ");
             }
-        } while (l != null);
+
+            head = next;
+        }
 
         builder.append(")");
         return builder.toString();
