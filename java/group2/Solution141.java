@@ -74,7 +74,7 @@ public class Solution141 {
         while (slow != fast) {
 
             if (fast == null || fast.next == null) {
-                return true;
+                return false;
             }
 
             slow = slow.next;
