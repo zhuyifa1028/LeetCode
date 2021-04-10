@@ -1,7 +1,5 @@
 package common;
 
-import group1.Solution2;
-
 import java.util.HashSet;
 import java.util.Random;
 import java.util.Set;
@@ -86,13 +84,6 @@ public class ListNode {
             }
         }
         return head;
-    }
-
-    public static void main(String[] args) {
-        ListNode l1 = random(10, 3);
-        ListNode l2 = random(10, 3);
-        System.out.println("输入：" + l1 + " + " + l2 + "");
-        System.out.println("输出：" + Solution2.addTwoNumbers(l1, l2));
     }
 
 }
